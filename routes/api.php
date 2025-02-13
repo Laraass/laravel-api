@@ -3,7 +3,6 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChatbotController;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/user', function (Request $request) {
