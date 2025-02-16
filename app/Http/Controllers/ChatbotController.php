@@ -13,10 +13,10 @@ class ChatbotController extends Controller
             "message" => "required|string",
         ]);
 
-        $response = Http::post('http://localhost:11434/api/generate', [
-            'model' => 'mistral',
-            'prompt' => $request->message,
-            'stream' => false,
+        $response = Http::post("http://localhost:11434/api/generate", [
+            "model" => "mistral",
+            "prompt" => $request->message,
+            "stream" => false,
         ]);
 
         return response()->json([
